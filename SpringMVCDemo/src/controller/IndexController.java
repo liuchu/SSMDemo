@@ -14,7 +14,7 @@ public class IndexController implements Controller{
     @Override
     public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
 
-        ModelAndView mav = new ModelAndView("index.jsp");
+        ModelAndView mav = new ModelAndView("index");
         return mav;
     }
 }
