@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringMVCDemo">
+    <output-path>$PROJECT_DIR$/../../../Installation/Programs/apache-tomcat-8.0.45/webapps</output-path>
+    <root id="archive" name="SpringMVCDemo.war">
+      <element id="javaee-facet-resources" facet="SpringMVCDemo/web/Web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF" />
+    </root>
+  </artifact>
+</component>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="DemoWar">
-    <output-path>$PROJECT_DIR$/../../../Installation/Programs/apache-tomcat-8.0.45/webapps</output-path>
-    <root id="archive" name="DemoWar.war">
-      <element id="dir-copy" path="$PROJECT_DIR$/FirstModule/src/main/webapp" />
-    </root>
-  </artifact>
-</component>
