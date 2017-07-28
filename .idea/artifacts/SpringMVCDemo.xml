@@ -1,7 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="war" build-on-make="true" name="SpringMVCDemo">
-    <output-path>D:/Installation/Programs/apache-tomcat-8.0.45/webapps</output-path>
+    <output-path>$PROJECT_DIR$/../../../Installation/Programs/apache-tomcat-8.0.45/webapps</output-path>
     <root id="archive" name="SpringMVCDemo.war">
+      <element id="javaee-facet-resources" facet="SpringMVCDemo/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="SpringMVCDemo" />
@@ -49,7 +50,6 @@
           <element id="file-copy" path="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/lib/spring-instrument-tomcat-3.2.0.M1.jar" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="SpringMVCDemo/web/Web" />
     </root>
   </artifact>
 </component>
