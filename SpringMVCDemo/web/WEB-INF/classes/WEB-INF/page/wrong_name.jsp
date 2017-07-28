@@ -13,9 +13,7 @@
 </head>
 <body>
 
-Full name： ${fullName.firstName} ${fullName.lastName}<br>
-Date: ${date}
-拦截器 通过？${passOrNot}
+You input wrong first name!
 
 </body>
 </html>

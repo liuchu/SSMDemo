@@ -2,20 +2,21 @@
   Created by IntelliJ IDEA.
   User: chuliu
   Date: 2017/7/26
-  Time: 11:01
+  Time: 22:12
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page language="java" contentType="text/html;charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false"%>
 <html>
 <head>
-    <title>Title</title>
+    <title>Total times</title>
 </head>
 <body>
 
-Full name： ${fullName.firstName} ${fullName.lastName}<br>
-Date: ${date}
-拦截器 通过？${passOrNot}
+
+
+session中记录的访问次数：${number}
 
 </body>
 </html>
