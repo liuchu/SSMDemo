@@ -7,9 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be03d36-5c20-4b95-8039-fb3d7b860682" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstModule/FirstModule.iml" afterPath="$PROJECT_DIR$/FirstModule/FirstModule.iml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMVCDemo.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVCDemo.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml" afterPath="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/web.xml" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/FirstModule/target/" />
@@ -30,11 +38,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpringDemo/src/bean/Category.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
               <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+=======
+      <file leaf-file-name="UploadedImageFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/model/UploadedImageFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_uploaded_image.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/show_uploaded_image.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
               <folding>
                 <element signature="e#425#426#0" expanded="true" />
               </folding>
@@ -42,6 +97,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpringDemo/src/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,6 +143,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -115,7 +173,6 @@
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/outcome.jsp" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/src/controller/CalculatController.java" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/index.jsp" />
-        <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/src/model/FullName.java" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/index.jsp" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/input_name.jsp" />
@@ -123,10 +180,18 @@
         <option value="$PROJECT_DIR$/SpringMVCDemo/src/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/count.jsp" />
         <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/web.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/SpringDemo/src/bean/Category.java" />
         <option value="$PROJECT_DIR$/SpringDemo/src/bean/Product.java" />
         <option value="$PROJECT_DIR$/SpringDemo/src/applicationContext.xml" />
         <option value="$PROJECT_DIR$/SpringDemo/src/test/TestBean.java" />
+=======
+        <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/SpringMVCDemo/src/model/UploadedImageFile.java" />
+        <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/show_uploaded_image.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/upload_image.jsp" />
+        <option value="$PROJECT_DIR$/SpringMVCDemo/src/controller/FileController.java" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
       </list>
     </option>
   </component>
@@ -153,10 +218,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -193,6 +258,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,6 +289,7 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -239,11 +311,24 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
               <option name="myItemId" value="SSMDemo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="SpringDemo" />
+=======
+              <option name="myItemId" value="SpringMVCDemo" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -251,23 +336,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="bean" />
+=======
+              <option name="myItemId" value="controller" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1484375" />
+<<<<<<< HEAD
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringDemo/lib" />
+=======
+    <property name="project.structure.side.proportion" value="0.21330275" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/classes" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -815,11 +912,6 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="FirstModule">
-          <settings>
-            <option name="CONTEXT_PATH" value="/FirstModule" />
-          </settings>
-        </artifact>
         <artifact name="SpringMVCDemo">
           <settings>
             <option name="CONTEXT_PATH" value="/SpringMVCDemo" />
@@ -886,7 +978,6 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="FirstModule" />
           <artifact name="SpringMVCDemo" />
         </option>
       </method>
@@ -953,22 +1044,31 @@
       <workItem from="1501037099080" duration="5959000" />
       <workItem from="1501047555244" duration="785000" />
       <workItem from="1501067050355" duration="11674000" />
+<<<<<<< HEAD
       <workItem from="1501160481661" duration="597000" />
       <workItem from="1501161887345" duration="137000" />
       <workItem from="1501162231977" duration="21000" />
       <workItem from="1501163811669" duration="269000" />
       <workItem from="1501164252045" duration="2273000" />
+=======
+      <workItem from="1501122797531" duration="9428000" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="36216000" />
+=======
+    <option name="totallyTimeSpent" value="42347000" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29180327" sideWeight="0.28385416" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49791232" order="8" side_tool="false" content_ui="tabs" />
@@ -976,6 +1076,24 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.47916666" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23953974" sideWeight="0.43854168" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49791232" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23953974" sideWeight="0.56145835" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1028,6 +1146,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/FirstModule/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1035,6 +1154,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
     <entry file="file://$PROJECT_DIR$/FirstModule/src/main/demo/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1291,13 +1412,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FirstModule/src/main/demo/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="132">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
+        <state relative-caret-position="150">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#79#80#0" expanded="false" />
+            <element signature="e#124#125#0" expanded="false" />
+          </folding>
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/model/FullName.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="198">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
@@ -1308,18 +1440,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+=======
+        <state relative-caret-position="200">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/model/FullName.java">
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/show_full_name.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/count.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="176">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+=======
+        <state relative-caret-position="172">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Installation/Programs/Java/Jdk1.8/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="1353" column="67" selection-start-line="1353" selection-start-column="61" selection-end-line="1353" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+          <folding />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/input_name.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="440">
           <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
         </state>
@@ -1343,14 +1527,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+=======
+        <state relative-caret-position="200">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="24" />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/show_full_name.jsp">
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/upload_image.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+=======
+        <state relative-caret-position="400">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
         </state>
       </provider>
     </entry>
@@ -1364,6 +1558,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringDemo/src/bean/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1390,6 +1585,38 @@
         <state relative-caret-position="418">
           <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/web/WEB-INF/page/show_uploaded_image.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/model/UploadedImageFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVCDemo/src/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 63a192233d8a79993ab6425aa9284eb65d38322a
         </state>
       </provider>
     </entry>
@@ -1413,7 +1640,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.21330275" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1426,7 +1653,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.21330275" />
               </list>
             </option>
           </splitter-proportions>
@@ -1485,7 +1712,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.21330275" />
               </list>
             </option>
           </splitter-proportions>
