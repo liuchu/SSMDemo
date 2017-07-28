@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="FirstModule">
-    <output-path>D:/Installation/Programs/apache-tomcat-8.0.45/webapps</output-path>
-    <root id="archive" name="FirstModule.war">
-      <element id="javaee-facet-resources" facet="FirstModule/web/Web" />
-      <element id="dir-copy" path="$PROJECT_DIR$/FirstModule/src/main/webapp/WEB-INF" />
-    </root>
-  </artifact>
-</component>
