@@ -34,7 +34,16 @@ public class IndexController{
     @RequestMapping("/submitName")
     public ModelAndView submitName(FullName fullName) throws Exception {
         //System.out.println("First name: "+fullName.getFirstName()+" | Last name:"+fullName.getLastName());
+
+        System.out.println("正在访问 Controller ");
         ModelAndView mav = new ModelAndView("show_full_name");
+        return mav;
+    }
+
+    @RequestMapping("/wrongName")
+    public ModelAndView wrongName() throws Exception {
+
+        ModelAndView mav = new ModelAndView("wrong_name");
         return mav;
     }
 
