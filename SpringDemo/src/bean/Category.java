@@ -1,12 +1,15 @@
 package bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by chuliu on 2017/7/27.
  */
+@Component("cate")
 public class Category {
 
     private int id;
-    private String name;
+    private String name = "category 1st - new";
 
     public Category() {
     }
