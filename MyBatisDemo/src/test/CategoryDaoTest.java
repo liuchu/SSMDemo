@@ -1,7 +1,9 @@
 package test;
 
 import dao.CategoryDao;
+import dao.ProductDao;
 import pojo.Category;
+import pojo.Product;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,18 +16,27 @@ public class CategoryDaoTest {
     public static void main(String[] args) throws IOException {
         CategoryDao dao = new CategoryDao();
 
-        Category category = new Category();
+        /*Category category = new Category();
         category.setName("新的Category_并修改名字");
         category.setId(3);
 
-        dao.updateCategory(category);
+        dao.updateCategory(category);*/
 
-        List<Category> list = dao.listCategory();
+       List<Category> list = dao.listProductsInCategory();
 
-        for (Category c:
-             list) {
-            System.out.println(c);
+        for (Category c : list) {
+            System.out.println("Category > id="+c.getId()+" name="+c.getName()+" and "+c.getProducts().size()+" products {");
+
+            for (Product p : c.getProducts()) {
+                System.out.println("[");
+                System.out.println("Product: id="+p.getId()+" name="+p.getName()+" price="+p.getPrice());
+                System.out.println("]");
+            }
+            System.out.println("}");
         }
+
+
+
 
     }
 }

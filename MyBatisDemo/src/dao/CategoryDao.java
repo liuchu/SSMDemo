@@ -8,7 +8,9 @@ import pojo.Category;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by chuliu on 2017/8/2.
@@ -37,7 +39,7 @@ public class CategoryDao {
                 categoryList) {
             System.out.println(cate.toString());
         }*/
-        System.out.println("SQL: select MANY category");
+        System.out.println("SQL: select ALL category");
 
         session.commit();
         session.close();
@@ -87,4 +89,42 @@ public class CategoryDao {
 
         return category;
     }
+
+    public List<Category> searchCategoryByName(String containName){
+        SqlSession session = sqlSessionFactory.openSession();
+        List<Category> categoryList= session.selectList("searchCategoryByName",containName);
+
+        System.out.println("SQL: search N category who contain searched word");
+
+        session.commit();
+        session.close();
+        return categoryList;
+    }
+
+    public List<Category> searchCategoryByNameAndId(String name, int id){
+        SqlSession session = sqlSessionFactory.openSession();
+        Map<String,Object> parameters = new HashMap();
+        parameters.put("id",id);
+        parameters.put("name",name);
+        List<Category> categoryList= session.selectList("searchCategoryByNameAndId",parameters);
+
+        System.out.println("SQL: search N category who's name contain searched word and id > input id");
+
+        session.commit();
+        session.close();
+        return categoryList;
+    }
+
+    public List<Category> listProductsInCategory(){
+        SqlSession session = sqlSessionFactory.openSession();
+
+        List<Category> categoryList= session.selectList("listProductsInCategory");
+
+        System.out.println("SQL: list all category with products");
+
+        session.commit();
+        session.close();
+        return categoryList;
+    }
+
 }

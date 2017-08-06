@@ -24,6 +24,7 @@
     </environments>
 
     <mappers>
-    <mapper resource="pojo/Category.xml"/>
-</mappers>
+        <mapper resource="pojo/Category.xml"/>
+        <mapper resource="pojo/Product.xml"/>
+    </mappers>
 </configuration>

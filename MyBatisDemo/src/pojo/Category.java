@@ -1,5 +1,7 @@
 package pojo;
 
+import java.util.List;
+
 /**
  * Created by chuliu on 2017/8/1.
  */
@@ -7,13 +9,15 @@ public class Category {
 
     private int id;
     private String name;
+    private List<Product> products;
 
     public Category() {
     }
 
-    public Category(int id, String name) {
+    public Category(int id, String name, List<Product> products) {
         this.id = id;
         this.name = name;
+        this.products = products;
     }
 
     public int getId() {
@@ -32,11 +36,20 @@ public class Category {
         this.name = name;
     }
 
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
     @Override
     public String toString() {
         return "Category{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", products=" + products +
                 '}';
     }
 }
