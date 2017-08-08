@@ -4,6 +4,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import pojo.Order;
 import pojo.Product;
 
 import java.io.IOException;
@@ -11,13 +12,13 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
- * Created by chuliu on 2017/8/6.
+ * Created by chuliu on 2017/8/8.
  */
-public class ProductDao {
+public class OrderDao {
 
     private static SqlSessionFactory sqlSessionFactory;
 
-    public ProductDao() throws IOException {
+    public OrderDao() throws IOException {
 
         if (sqlSessionFactory==null) {
             String resource = "mybatis-config.xml";
@@ -27,15 +28,15 @@ public class ProductDao {
 
     }
 
-    public List<Product> listProductWithCategory(){
+    public List<Order> listOrders(){
         SqlSession session = sqlSessionFactory.openSession();
 
-        List<Product> productList= session.selectList("listProductWithCategory");
+        List<Order> orderList = session.selectList("listOrder");
 
-        System.out.println("SQL: list all products with category");
+        System.out.println("SQL: list all orders with category");
 
         session.commit();
         session.close();
-        return productList;
+        return orderList;
     }
 }

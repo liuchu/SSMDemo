@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pojo">
+    <resultMap type="Order" id="orderBean">
+        <id column="o_id" property="id" />
+        <result column="o_code" property="code" />
+
+        <collection property="orderItems" ofType="OrderItem">
+            <id column="oi_o_id" property="id" />
+            <result column="oi_number" property="number" />
+            <association property="product" javaType="Product">
+                <id column="p_id" property="id"/>
+                <result column="p_name" property="name"/>
+                <result column="p_price" property="price"/>
+            </association>
+        </collection>
+    </resultMap>
+
+    <select id="listOrder" resultMap="orderBean">
+        select o.id 'o_id', o.code 'o_code', p.id 'p_id', p.name 'p_name', p.price 'p_price', p.cid 'p_cid',
+        oi.id 'oi_id', oi.oid 'oi_oid', oi.pid 'oi_pid', oi.number 'oi_number'
+        from order_ o
+        left join order_item_ oi    on o.id =oi.oid
+        left join product_ p on p.id = oi.pid
+    </select>
+
+    <select id="getOrder" resultMap="orderBean" parameterType="int">
+        select o.id 'o_id', o.code 'o_code', p.id 'p_id', p.name 'p_name', p.price 'p_price', p.cid 'p_cid',
+        oi.id 'oi_id', oi.oid 'oi_oid', oi.pid 'oi_pid', oi.number 'oi_number'
+        from order_ o
+        left join order_item_ oi on o.id =oi.oid
+        left join product_ p on p.id = oi.pid
+        where o.id = #{id}
+    </select>
+</mapper>

@@ -1,7 +1,6 @@
 package test;
 
 import dao.CategoryDao;
-import dao.ProductDao;
 import pojo.Category;
 import pojo.Product;
 

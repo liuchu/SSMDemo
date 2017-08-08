@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="pojo">
-    <resultMap type="Product" id="listProductWithCategoryBean">
+    <resultMap type="Product" id="ProductBean">
         <id column="p_id" property="id" />
         <result column="p_name" property="name" />
         <result column="p_price" property="price" />
@@ -15,7 +15,7 @@
         </association>
     </resultMap>
 
-    <select id="listProductWithCategory" resultMap="listProductWithCategoryBean">
+    <select id="listProductWithCategory" resultMap="ProductBean">
         SELECT c.id 'c_id', c.`name` 'c_name', p.id 'p_id', p.`name` 'p_name', p.price 'p_price'
         FROM category_ c
         LEFT JOIN product_ p
