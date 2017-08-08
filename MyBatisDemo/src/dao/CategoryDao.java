@@ -1,5 +1,6 @@
 package dao;
 
+import mapper.CategoryMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -33,16 +34,20 @@ public class CategoryDao {
     public List<Category> listCategory() throws IOException {
 
         SqlSession session = sqlSessionFactory.openSession();
-        List<Category> categoryList= session.selectList("listCategory");
 
-        /*for (Category cate:
-                categoryList) {
-            System.out.println(cate.toString());
-        }*/
+        /* 1.When use xml configuration, use session.select*
+         * 2.When use annotation(Mapper interface), use session.getMapper*
+         */
+        //List<Category> categoryList= session.selectList("listCategory");
+
+        CategoryMapper mapper = session.getMapper(CategoryMapper.class);
+        List<Category> categoryList = mapper.listCategory();
+
         System.out.println("SQL: select ALL category");
 
         session.commit();
         session.close();
+
         return categoryList;
     }
 
@@ -51,7 +56,10 @@ public class CategoryDao {
 
         SqlSession session = sqlSessionFactory.openSession();
 
-        session.insert("addCategory",category);
+        //session.insert("addCategory",category);
+        CategoryMapper mapper = session.getMapper(CategoryMapper.class);
+        mapper.addCategory(category);
+
         System.out.println("SQL: add a new category");
         session.commit();
         session.close();

@@ -21,9 +21,13 @@ public class CategoryDaoTest {
 
         dao.updateCategory(category);*/
 
-       List<Category> list = dao.listProductsInCategory();
+        Category category = new Category();
+        category.setName("新的Category");
 
-        for (Category c : list) {
+        //dao.addCategory(category);
+        List<Category> list = dao.listCategory();
+
+        /*for (Category c : list) {
             System.out.println("Category > id="+c.getId()+" name="+c.getName()+" and "+c.getProducts().size()+" products {");
 
             for (Product p : c.getProducts()) {
@@ -32,6 +36,10 @@ public class CategoryDaoTest {
                 System.out.println("]");
             }
             System.out.println("}");
+        }*/
+
+        for (Category c : list) {
+            System.out.println("name:"+c.getName());
         }
 
 

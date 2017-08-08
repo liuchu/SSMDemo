@@ -25,6 +25,8 @@
 
     <mappers>
         <mapper resource="pojo/Category.xml"/>
+        <mapper class="mapper.CategoryMapper"/>
+
         <mapper resource="pojo/Product.xml"/>
         <mapper resource="pojo/Order.xml"/>
         <mapper resource="pojo/OrderItem.xml"/>
