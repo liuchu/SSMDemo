@@ -5,6 +5,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.log4j.Logger;
 import pojo.Category;
 
 import java.io.IOException;
@@ -19,6 +20,7 @@ import java.util.Map;
 public class CategoryDao {
 
     private static SqlSessionFactory sqlSessionFactory;
+    private Logger log;
 
     public CategoryDao() throws IOException {
 
@@ -27,6 +29,9 @@ public class CategoryDao {
            InputStream configInputStream = Resources.getResourceAsStream(resource);
            sqlSessionFactory = new SqlSessionFactoryBuilder().build(configInputStream);
        }
+
+        log  = Logger.getLogger(CategoryDao.class);
+
 
     }
 
@@ -44,6 +49,8 @@ public class CategoryDao {
         List<Category> categoryList = mapper.listCategory();
 
         System.out.println("SQL: select ALL category");
+
+        log.info("SQL: select ALL category");
 
         session.commit();
         session.close();

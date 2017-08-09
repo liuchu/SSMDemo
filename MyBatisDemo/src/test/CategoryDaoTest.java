@@ -21,8 +21,8 @@ public class CategoryDaoTest {
 
         dao.updateCategory(category);*/
 
-        Category category = new Category();
-        category.setName("新的Category");
+        //Category category = new Category();
+        //category.setName("新的Category");
 
         //dao.addCategory(category);
         List<Category> list = dao.listCategory();
