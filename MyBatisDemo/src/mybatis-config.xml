@@ -5,6 +5,11 @@
 
 <configuration>
 
+    <settings>
+        <!--Enable cahce-2-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
     <typeAliases>
         <package name="pojo"/>
     </typeAliases>
@@ -25,7 +30,7 @@
 
     <mappers>
         <mapper resource="pojo/Category.xml"/>
-        <mapper class="mapper.CategoryMapper"/>
+        <!--<mapper class="mapper.CategoryMapper"/>-->
 
         <mapper resource="pojo/Product.xml"/>
         <mapper resource="pojo/Order.xml"/>

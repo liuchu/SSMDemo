@@ -21,11 +21,14 @@ public class CategoryDaoTest {
 
         dao.updateCategory(category);*/
 
-        //Category category = new Category();
-        //category.setName("新的Category");
+        /*for (int i=3; i<=100; i++) {
+            Category category = new Category();
+            category.setName("category"+i);
+            dao.addCategory(category);
+        }*/
 
-        //dao.addCategory(category);
-        List<Category> list = dao.listCategory();
+
+        //List<Category> list = dao.listCategoryWithPaging(2,10);
 
         /*for (Category c : list) {
             System.out.println("Category > id="+c.getId()+" name="+c.getName()+" and "+c.getProducts().size()+" products {");
@@ -38,12 +41,14 @@ public class CategoryDaoTest {
             System.out.println("}");
         }*/
 
-        for (Category c : list) {
+        /*for (Category c : list) {
             System.out.println("name:"+c.getName());
-        }
+        }*/
 
-
-
+        Category category1 = dao.selectCategory(2);
+        Category category2 = dao.selectCategory(2);
+        Category category3 = dao.selectCategory(2);
+        Category category4 = dao.selectCategory(2);
 
     }
 }

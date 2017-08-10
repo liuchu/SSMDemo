@@ -58,6 +58,31 @@ public class CategoryDao {
         return categoryList;
     }
 
+    //分页查询
+    public List<Category> listCategoryWithPaging(int page, int size) throws IOException {
+
+        SqlSession session = sqlSessionFactory.openSession();
+
+        //MySQL limit a,b a的角标从零开始
+        int start = (page-1)*size;
+        int count = size;
+
+        System.out.println("start:"+start+" count:"+count);
+
+        Map<String,Integer> parameters = new HashMap<>();
+        parameters.put("start",start);
+        parameters.put("count",count);
+
+        List<Category> categoryList= session.selectList("listCategory",parameters);
+
+        System.out.println("SQL: select category at page "+page+" "+size+" items per page");
+
+        session.commit();
+        session.close();
+
+        return categoryList;
+    }
+
     //Insert new category
     public void addCategory(Category category){
 
@@ -99,7 +124,7 @@ public class CategoryDao {
 
         Category category = session.selectOne("selectCategory",id);
         System.out.println("SQL: select a category");
-        session.commit();
+        //session.commit();
         session.close();
 
         return category;

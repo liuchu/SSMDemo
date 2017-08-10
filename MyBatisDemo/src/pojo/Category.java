@@ -1,11 +1,12 @@
 package pojo;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by chuliu on 2017/8/1.
  */
-public class Category {
+public class Category implements Serializable {
 
     private int id;
     private String name;
