@@ -8,6 +8,15 @@ import org.apache.shiro.util.Factory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+ *    Shiro framework function:
+ *    1. Authentication - proving user identity, often called user ‘login’.
+ *    2. Authorization - access control
+ *    3. Cryptography - protecting or hiding data from prying eyes
+ *    4. Session Management - per-user time-sensitive state
+ *
+ */
+
 public class Tutorial {
 
     private static final transient Logger log = LoggerFactory.getLogger(Tutorial.class);
