@@ -8,14 +8,14 @@ import javax.annotation.Resource;
 /**
  * Created by chuliu on 2017/7/27.
  */
-@Component("product")
+//@Component("product")
 public class Product {
 
     private int id;
     private String name = "product 1st - new";
     //1. @Autowired
     //2. @Resource(name="cate")
-    @Resource(name="cate")
+    //@Resource(name="cate")
     private Category category;
 
     public Product() {
@@ -51,5 +51,14 @@ public class Product {
     //@Autowired same effect as written at  "private Category category"
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category=" + category +
+                '}';
     }
 }

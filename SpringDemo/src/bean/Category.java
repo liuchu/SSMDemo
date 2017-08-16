@@ -5,11 +5,11 @@ import org.springframework.stereotype.Component;
 /**
  * Created by chuliu on 2017/7/27.
  */
-@Component("cate")
+
 public class Category {
 
     private int id;
-    private String name = "category 1st - new";
+    private String name;
 
     public Category() {
     }
@@ -33,5 +33,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
