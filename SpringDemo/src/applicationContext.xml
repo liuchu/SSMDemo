@@ -48,4 +48,18 @@
         </aop:aspect>
     </aop:config>-->
 
+    <!-- DI(依赖注入)，Construct(构造器)方式注入 -->
+    <bean class="bean.TestConstructInjectionBean" id="tcib">
+        <constructor-arg index="0" type="java.lang.String" value="Equilateral"></constructor-arg>
+        <constructor-arg index="1" type="int" value="20"></constructor-arg>
+    </bean>
+
+    <!-- DI(依赖注入)，Setter方式注入 -->
+    <bean class="bean.TestSetterInjectionBean" id="tsib">
+        <property name="type" value="Equilateral"> </property>
+        <property name="height" value="20"> </property>
+
+        <!--<property name="object" ref="Object"></property> 如果属性是类类型-->
+    </bean>
+
 </beans>
