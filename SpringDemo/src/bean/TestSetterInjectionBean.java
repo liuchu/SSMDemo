@@ -1,5 +1,6 @@
 package bean;
 
+
 /**
  * Created by chuliu on 2017/8/16.
  */
@@ -7,6 +8,12 @@ public class TestSetterInjectionBean {
 
     private String type;
     private int  height;
+
+    public TestSetterInjectionBean() {
+    }
+
+
+
     /**
      * @param type the type to set
      */

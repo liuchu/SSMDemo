@@ -1,6 +1,7 @@
 package bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -12,13 +13,21 @@ import javax.annotation.Resource;
 public class Product {
 
     private int id;
-    private String name = "product 1st - new";
+    private String name;
     //1. @Autowired
     //2. @Resource(name="cate")
     //@Resource(name="cate")
+    @Autowired
+    @Qualifier(value = "categoryQualifier")
     private Category category;
 
     public Product() {
+    }
+
+    //@Autowired
+    public Product( Category category){
+        this.category = category;
+        System.out.println("------Product constructor(category)----");
     }
 
     public Product(int id, String name, Category category) {
@@ -41,6 +50,7 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+
     }
 
 
@@ -48,9 +58,10 @@ public class Product {
         return category;
     }
 
-    //@Autowired same effect as written at  "private Category category"
+    //@Autowired
     public void setCategory(Category category) {
         this.category = category;
+        System.out.println("------Product setCategory method----");
     }
 
     @Override

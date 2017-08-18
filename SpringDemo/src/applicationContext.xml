@@ -14,25 +14,30 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <!-- Using annotation to define beans  -->
-    <context:component-scan base-package="bean"/>
+    <!-- 开启Spring注解 包括：
+        @Required:
+        @Autowired:
+        @PostConstruct:
+        @PreDestroy:
+        @Resource (if available)
+        @WebServiceRef (if available)
+        @EJB(if available)
+        @PersistenceContext and @PersistenceUnit (if available)
+        注意不会激活@Transactional，要另外开启
+    -->
+    <context:annotation-config/>
 
+    <!-- 开启 对指定包的 注解扫描 -->
+    <context:component-scan base-package="bean"/>
     <context:component-scan base-package="aspect"/>
     <context:component-scan base-package="service"/>
+    <context:component-scan base-package="listener"/>
+
+    <!-- 开启Spring对AspectJ的支持 -->
     <aop:aspectj-autoproxy/>
 
-    <!--<context:annotation-config/>
-    <bean name="cate" class="bean.Category">
-        <property name="name" value="category 1st" />
-    </bean>
+    <tx:annotation-driven/>
 
-    <bean name="product" class="bean.Product">
-        <property name="name" value="product 1st" />
-        &lt;!&ndash; No need when using annotation &ndash;&gt;
-        &lt;!&ndash; <property name="category" ref="cate" /> &ndash;&gt;
-    </bean>-->
-
-    <!-- aop configuration, no need when using annotation -->
     <!--<bean name="product_service" class="service.ProductService">
     </bean>
 
@@ -51,12 +56,19 @@
     <!-- 利用ApplicationContextHelper 可以在任何地方获取ApplicationContext -->
     <bean id="applicationContextHelper" class="util.ApplicationContextHelper" scope="singleton"/>
 
-    <bean id="category" class="bean.Category">
+    <bean id="category" class="bean.Category" scope="prototype">
+        <qualifier value="categoryQualifier"/>
         <property name="name" value="category 1st" />
     </bean>
-    <!--<bean name="product" class="bean.Product">
+
+    <bean id="product" class="bean.Product" scope="prototype">
         <property name="name" value="product 1st" />
-    </bean>-->
+    </bean>
+
+    <bean id="pointB" class="bean.Point" scope="prototype">
+        <property name="x" value="4"/>
+        <property name="y" value="2"/>
+    </bean>
 
     <!-- DI(依赖注入)，Construct(构造器)方式注入 -->
     <bean class="bean.TestConstructInjectionBean" id="tcib">
@@ -128,6 +140,8 @@
     <bean id="autowireByConstruct" class="bean.TestAutowireByConstructBean" autowire="constructor">
         <property name="name" value="My name"/>
     </bean>
+
+    <!-- autowire="autodetect"表示自动选择 -->
 
 
 

@@ -1,12 +1,19 @@
 package bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by chuliu on 2017/8/16.
  */
+@Component
 public class TestAutowireByConstructBean {
 
     private String name;
     private Category category;
+
+    public TestAutowireByConstructBean(){
+
+    }
 
     public TestAutowireByConstructBean(Category category){
         this.category = category;

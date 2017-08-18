@@ -1,5 +1,6 @@
 package bean;
 
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Component;
  */
 
 public class Category {
+
 
     private int id;
     private String name;
@@ -23,6 +25,7 @@ public class Category {
         return id;
     }
 
+    //@Required
     public void setId(int id) {
         this.id = id;
     }
@@ -31,6 +34,7 @@ public class Category {
         return name;
     }
 
+    @Required
     public void setName(String name) {
         this.name = name;
     }
@@ -42,4 +46,6 @@ public class Category {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+
 }

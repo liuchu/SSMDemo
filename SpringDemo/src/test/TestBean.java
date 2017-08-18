@@ -27,8 +27,12 @@ public class TestBean {
 
         /*Category bean1 = (Category)context.getBean("category");
         System.out.println(bean1);*/
-        TestAutowireByConstructBean bean = (TestAutowireByConstructBean)ApplicationContextHelper.getApplicationContext().getBean("autowireByConstruct");
-        System.out.println(bean);
+        //TestAutowireByConstructBean bean = (TestAutowireByConstructBean)ApplicationContextHelper.getApplicationContext().getBean("autowireByConstruct");
+        //System.out.println(bean);
+
+        Product product = (Product) context.getBean("product");
+
+        System.out.println(product.getCategory().getName());
 
         /*product.Method1(2,3);
         System.out.println("-----------");
