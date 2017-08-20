@@ -14,7 +14,7 @@ public class TestAOP {
         ProductService ps = (ProductService)context.getBean("product_service");
         ps.Method1(1,2);
 
-        ps.Method2(1,2);
+        //ps.Method2(1,2);
 
     }
 }
