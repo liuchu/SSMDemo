@@ -15,6 +15,7 @@ public class MyEventListener<DrawEvent extends ApplicationEvent> implements Appl
 
     @Override
     public void onApplicationEvent(DrawEvent drawEvent) {
+        System.out.println("Trig event: "+drawEvent.getClass().getName());
         System.out.println(drawEvent.toString());
     }
 }

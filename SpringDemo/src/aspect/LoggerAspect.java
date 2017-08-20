@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
  * Created by chuliu on 2017/7/29.
  */
 
-@Component
+//@Component("loggerAspect")
 @Aspect
 public class LoggerAspect  {
 
+    //@Around需要ProceedingJoinPoint
     @Around(value = "execution(* service.ProductService.*(..))")
     public Object log(ProceedingJoinPoint joinPoint) throws Throwable{
 

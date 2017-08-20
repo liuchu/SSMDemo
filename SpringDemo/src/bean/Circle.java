@@ -4,16 +4,18 @@ import javax.annotation.Resource;
 
 import listener.DrawEvent;
 import listener.TestEvent;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.MessageSource;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
 /**
  * Created by chuliu on 2017/8/17.
  */
 
-@Controller
+//@Component
 public class Circle implements ApplicationEventPublisherAware
 {
     private Point center;

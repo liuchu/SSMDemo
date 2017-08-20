@@ -1,11 +1,13 @@
 package bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
  * Created by chuliu on 2017/8/16.
  */
-@Component
+//@Component
 public class TestAutowireByConstructBean {
 
     private String name;

@@ -101,10 +101,6 @@ public class ProductServiceTest {
         assertEquals(2, productService.Method2(1,2));
     }
 
-    @Test
-    public void Method3Test(){
-        assertEquals(3, productService.Method3(1,2));
-    }
 
     @Test
     public void Method1TestA(){

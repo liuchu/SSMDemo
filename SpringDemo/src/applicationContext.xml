@@ -38,20 +38,6 @@
 
     <tx:annotation-driven/>
 
-    <!--<bean name="product_service" class="service.ProductService">
-    </bean>
-
-    <bean id="loggerAspect" class="aspect.LoggerAspect"/>
-
-    <aop:config>
-        <aop:pointcut id="loggerCutpoint"
-                      expression=
-                              "execution(* service.ProductService.*(..)) "/>
-
-        <aop:aspect id="logAspect" ref="loggerAspect">
-            <aop:around pointcut-ref="loggerCutpoint" method="log"/>
-        </aop:aspect>
-    </aop:config>-->
 
     <!-- 利用ApplicationContextHelper 可以在任何地方获取ApplicationContext -->
     <bean id="applicationContextHelper" class="util.ApplicationContextHelper" scope="singleton"/>
@@ -142,6 +128,27 @@
     </bean>
 
     <!-- autowire="autodetect"表示自动选择 -->
+
+    <!-- 具体配置一个Aspect(切面)的详细运行规则  -->
+    <aop:config>
+        <aop:aspect id="firstAspect" ref="firstAspect">
+
+            <aop:after method="loggingAdvice" pointcut="execution(public * service.ProductService.*(..))"></aop:after>
+            <!--<aop:before method="withReturnType" pointcut="execution(public bean.Category service.ProductService.*(..))"/>-->
+
+        </aop:aspect>
+    </aop:config>
+
+
+    <!--
+    <aop:config>
+        <aop:pointcut id="loggerCutpoint"
+                      expression="execution(* service.ProductService.*(..)) "/>
+
+        <aop:aspect id="logAspect" ref="loggerAspect">
+            <aop:around pointcut-ref="loggerCutpoint" method="log"/>
+        </aop:aspect>
+    </aop:config>-->
 
 
 
