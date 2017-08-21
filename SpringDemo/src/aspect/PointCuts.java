@@ -1,30 +1,24 @@
 package aspect;
 
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by chuliu on 2017/8/18.
+ * Created by chuliu on 2017/8/20.
+ * Define all point cuts here
  */
-
-@Component("firstAspect")
+@Component
 @Aspect
-public class FirstAspect {
+public class PointCuts {
 
-    public void loggingAdvice()
-    {
-        System.out.println("Advice run. Get method is called");
-    }
-
-    @Before(value = "aspect.PointCuts.logStart()")
-    public void anyPublicMethodOfTrasferService(){
+    @Pointcut("execution(public * service.ProductService.*(..))")
+    public void logStart(){
         System.out.println("firstAspect: Called in any public method of ProductService");
     }
 
-   /* @Pointcut("within(service..*)")
+    @Pointcut("within(service..*)")
     public void anyPublicMethod(){
         System.out.println("firstAspect: Called in all public methods");
     }
@@ -32,5 +26,5 @@ public class FirstAspect {
     @Pointcut("bean(ProductService)")
     public void withReturnType(){
         System.out.println("firstAspect:Called in method of ProductService who return Category");
-    }*/
+    }
 }
