@@ -1,9 +1,6 @@
 package aspect;
 
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,9 +16,14 @@ public class FirstAspect {
         System.out.println("Advice run. Get method is called");
     }
 
-    @Before(value = "aspect.PointCuts.logStart()")
-    public void anyPublicMethodOfTrasferService(){
-        System.out.println("firstAspect: Called in any public method of ProductService");
+    @Before(value = "aspect.PointCuts.logProduct()")
+    public void LogStart(){
+        System.out.println("firstAspect: Before");
+    }
+
+    @After(value = "aspect.PointCuts.logProduct()")
+    public void LogEnd(){
+        System.out.println("firstAspect: After");
     }
 
    /* @Pointcut("within(service..*)")

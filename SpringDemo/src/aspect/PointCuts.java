@@ -9,13 +9,12 @@ import org.springframework.stereotype.Component;
  * Created by chuliu on 2017/8/20.
  * Define all point cuts here
  */
-@Component
-@Aspect
+
 public class PointCuts {
 
     @Pointcut("execution(public * service.ProductService.*(..))")
-    public void logStart(){
-        System.out.println("firstAspect: Called in any public method of ProductService");
+    public void logProduct(){
+
     }
 
     @Pointcut("within(service..*)")
